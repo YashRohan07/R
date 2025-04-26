@@ -68,3 +68,23 @@ cat(str)   # cat() prints properly without showing backslashes
 
 
 
+# Convert the string to lower case:
+tolower(str)   # Output: "we are the so-called \"vikings\", from the north."
+
+# Convert the string to upper case:
+toupper(str)   # Output: "WE ARE THE SO-CALLED \"VIKINGS\", FROM THE NORTH."
+
+
+# Splitting a String:
+
+# Use strsplit() to split a string into parts based on a delimiter:
+var <- strsplit(str, split=" ")   # Splits the string by space (" ")
+
+var    # Output: a list of words split by space
+
+# Output will be:
+# [1] "We"           "are"          "the"          "so-called"    "\"Vikings\","
+# [6] "from"         "the"          "north."
+
+
+
