@@ -34,3 +34,32 @@ class(x)         # Output: "character"
 # Logical (Boolean)
 x <- TRUE
 class(x)         # Output: "logical"
+
+
+
+# Type Conversion in R
+
+# - You can convert variables from one type to another using the following functions:
+#   - as.numeric() : Converts to numeric type
+#   - as.integer() : Converts to integer type
+#   - as.complex() : Converts to complex type
+
+
+# Define variables
+x <- 1L     # x is of type integer
+y <- 2      # y is of type numeric
+
+# Convert from integer to numeric
+a <- as.numeric(x)
+
+# Convert from numeric to integer
+b <- as.integer(y)
+
+# Print original values
+x    # Output: 1
+y    # Output: 2
+
+# Print the class (data type) of the converted variables
+class(a)   # Output: "numeric"
+class(b)   # Output: "integer"
+
